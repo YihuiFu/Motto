@@ -1,0 +1,21 @@
+﻿@if (Request.IsAuthenticated)
+{
+    <form>
+        <a style="color: red; margin-left: 30px; float: right; font-size: 16px;">退出</a>
+        <a style="float: right; font-size: 16px;">管理员，XXX</a>
+    </form>@*
+    
+    @*
+    <text>Welcome <strong>@User.Identity.Name</strong>!
+    [ @Html.ActionLink("Log Off", "LogOff", "Account") ]</text>
+    *@
+    
+}
+else
+{
+    <text>Hello world</text>
+   /* @:*@[ @Html.ActionLink("Log On", "LogOn", "Account") ]*/
+    
+}
+
+

@@ -1,0 +1,498 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.7em;
+	letter-spacing: 1px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #333;
+    background:#fff ;
+}
+		
+a:link, a:visited { color: #dd0034; text-decoration: none; font-weight: normal; } 
+a:active, a:hover { color: #990099; text-decoration: underline; }
+
+p { margin: 0px; padding: 0px; }
+
+img { margin: 0px; padding: 0px; border: none; }
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+.cleaner_h50 { clear: both; width:100%; height: 50px; }
+.cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+.margin_r35 { margin-right: 35px; }
+
+.button_01 a {
+	display: block;
+	width: 102px;
+	height: 22px;
+	padding: 5px 0;
+	color: #a89ba5;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+.button_01 a:hover {
+	color: #ffffff;
+	
+}
+
+.button_02 a {
+	display: block;
+	float:right;
+	width: 102px;
+	height: 22px;
+	padding: 5px 0;
+	color: #a89ba5;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+
+
+h2 { 
+	margin: 0 0 10px 0;
+	padding: 10px 0 15px 0;
+	font-size: 24px;
+	font-weight: normal;
+	color: #271a23;
+	
+}
+
+h3 {
+	margin: 0	;
+	padding: 2px 0;
+	font-size: 18px;
+	font-weight: normal;
+	color: #271a23;
+}
+
+#wrapper {
+	width: 990px;
+	margin: 0 auto;
+}
+
+
+/* header */
+
+#header_bar {
+	clear: both;
+	width: 970px;
+	height: 115px;
+	padding: 0 10px;
+	overflow: hidden;
+	border-bottom: 2px solid #dfdfdf;
+	margin-bottom: 25px;
+	
+}
+
+#header_bar  #header {
+	position: relative;
+	float: left;
+	padding: 0 5px;
+	margin-top: 20px;
+	overflow: hidden;
+	
+	
+	
+}
+#header_bar  #loginheader {
+	position: relative;
+	/*float: left;*/
+	padding: 0 5px;
+	margin-top: 20px;
+	overflow: hidden;
+	
+	text-align :center;
+	}
+
+
+#header_bar  #header .right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 25px;
+	height: 83px;
+	
+}
+
+#header_bar  #header h1 {
+	margin: 0;
+	padding: 5px 0;
+}
+
+#header_bar  #header h1 a {
+	margin: 0px;
+	padding: 0px;
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#header_bar  #header h1 a:hover {
+	font-weight: bold;	
+	text-decoration: none;
+}
+
+#header_bar  #header h1 a span {
+	display: block;
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+
+#header_bar #logon {
+	float: right;
+	width: 280px;
+	height: 29px;
+	padding: 1px;
+	margin-top: 40px;
+	border:none;
+	font-size:12px;
+	
+}
+
+#header_bar #logon form {
+	float: right;
+	padding-left:70px;
+	border:none;
+	}	
+
+
+
+#search_box form {
+	width: 280px;
+	height: 29px;
+	margin: 0;
+	padding: 0;
+	
+	border:1px solid #dfdfdf;
+	background-color:#FFFFFF;
+}
+
+#searchfield {
+	height: 19px;
+	width: 200px;
+	padding: 5px 5px 5px 5px;
+	margin-right: 0px;
+	color: #988392;
+	font-size: 12px;
+	font-variant: normal;
+	line-height: normal;
+	background: none;
+	border: 0.5px #999999;
+}
+
+#searchbutton {
+ 	height: 29px;
+	width: 60px;
+	padding: 3px 0 5px 0;
+	cursor: pointer;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: pre;
+	color: #fff;
+	background: #58585a;
+	-moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px;
+	
+}
+
+/* end of header */
+
+/* sidebar */
+
+#sidebar {
+	float: left;
+	position: absolute;
+	width:  220px;
+	margin: 5px 0;
+	padding: 5px 10px 10px 10px;
+	background:#6cbbb5;
+}
+
+#sidebar .sidebar_top {
+	position: absolute;
+	width: 240px;
+	height: 13px;
+	top: -13px;
+	left: 0;
+	background: url(images/templatemo_sidebar_top.png) no-repeat;
+}
+
+#sidebar .sidebar_bottom {
+	position: absolute;
+	width: 240px;
+	height: 13px;
+	bottom: -13px;
+	left: 0;
+	background: url(images/templatemo_sidebar_bottom.png) no-repeat;
+}
+
+#sidebar .sidebar_section {
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+.sidebar_section h2 {
+	font-size: 24px;
+	margin-bottom: 0px;
+}
+
+.sidebar_section form {
+	width: 210px;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar_section form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.input_field {
+	height: 18px;
+	width: 198px;
+	padding: 5px 5px;
+	margin-bottom: 10px;
+	color: #000000;
+	font-size: 12px;
+	font-variant: normal;
+	line-height: normal;
+}
+
+.submit_btn {
+	
+ 	height: 30px;
+	width: 102px;
+	margin: 0px;
+	padding: 3px 0 10px 0;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: pre;
+	color: #a89ba5;
+	background: url(images/templatemo_button.png) no-repeat;
+	border: none;
+	outline: none;
+}
+
+.submit_btn:hover {
+	color: #ffffff;
+	background: url(images/templatemo_button_hover.png) no-repeat;
+}
+
+#sidebar .sidebar_section .menu_list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.menu_list li {
+	padding: 0;
+	margin: 0;
+	background:#d2ebe4;
+	border-bottom: 1px solid #86c1c0;
+	
+}
+
+.menu_list li:hover {
+	
+	background:#fff;
+}
+
+.menu_list li a {
+	display: block;
+	color: #201f1c;
+	padding: 5px 0 5px 20px;
+}
+.menu_list li a:hover {
+	color: #dd0034;
+	text-decoration: none;
+}
+
+.sidebar_section .image_wrapper {
+	border: 1px solid #c0afbb;
+	padding: 9px;
+	margin-bottom: 10px;
+}
+
+.sidebar_section .discount {
+	margin: 5px 0 0 0;
+	font-weight: bold;
+}
+
+.sidebar_section .discount span {
+	font-size: 20px;
+	color: #C00;
+}
+
+.sidebar_section .discount a {
+	font-weight: bold;
+	color: #000;
+}
+
+/* end of sidebar */
+
+/* content */
+
+#content {
+	float: right;
+	width: 670px;
+	
+	
+}
+#logincontent {
+	/*float: right;*/
+	width: 990px;
+	text-align :center;
+	
+}
+
+#contacts-form { clear:right; width:100%; overflow:hidden;}
+#contacts-form fieldset { border:none; float:left; }
+#contacts-form .field { clear:both;}
+#contacts-form label { float:left; width:97px; line-height:30px; padding-bottom:8px; font-weight:bold; color:#58585A;}
+#contacts-form input { width:227px; padding:1px 0 1px 3px;  border:2px solid #dfdfdf; color:#414141;}
+#contacts-form textarea { width:815px; height:159px; padding:1px 0 1px 3px;  left top; border:1px solid #ededed; color:#414141; margin-bottom:20px; overflow:auto;}
+#contacts-form .link1 { float:right;}
+
+
+#content #search {
+	width: 670px;
+	height: 80px;
+	padding: 10px 0;
+	margin-bottom: 15px;
+	border:1px solid #dfdfdf;
+} 
+
+
+
+
+
+#search h2 {
+	color: #ffffff;
+	font-size: 28px;
+}
+
+#content p {
+	margin-bottom: 10px;
+}
+
+#content .content_section {
+	clear: both;
+	width: 670px;
+	border: 1px solid #dfdfdf;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.product_box {
+	float: left;
+	width: 200px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #666;
+	margin-bottom: 20px;
+}
+
+.pagination{
+
+     float: left;
+	width: 670px;
+	padding-top:5px;
+	padding-bottom: 1px;
+	text-align:center;
+	
+	
+	border-top: 1px dotted #666;
+}
+.pagination a{
+	color: #666666;
+	font-weight: bold;
+	display:inline;
+
+}
+
+#content .product_box p {
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+#content .product_box a {
+	color: #000000;
+	font-weight: bold;
+}
+
+.price {
+	color: #7c0d41;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.product_box h3 {
+	background: #2e202a;
+	padding: 3px 10px;
+	margin: 10px 0;
+	color: #aea68c;
+	font-size: 12px;
+}
+
+.product_box .image_wrapper {
+	padding: 4px;
+	border: 1px solid #2e202a;
+	margin-bottom: 10px;
+}
+
+
+#code{
+	border: 1px solid #dfdfdf;
+	width:80px;
+	text-align:center;
+}
+/* end of content */
+
+/* footer */
+
+#footer_wrapper {
+	clear: both;
+	width: 100%;
+	color:#2e3436;
+
+}
+
+#footer {
+	width: 970px;
+	padding: 30px 10px;
+	margin: 0 auto;
+	text-align: center;
+	border-top:2px solid #dfdfdf;
+	
+}
+
+#footer a {
+	color: #13a89e;
+}
+
+
+/* end of footer */

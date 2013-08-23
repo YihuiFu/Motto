@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+@model IEnumerable <Dengzher.Web.Models.BrandModels>
+@section Search
+{
+     <h2 style="color: red;">搜索框</h2>
+            <div id="search_box">
+                <form action="#" method="get">
+                    <input type="text" value="Enter keyword here..." name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                    <input type="submit" name="Search" value="搜索" alt="Search" id="searchbutton" title="Search" />
+                </form>
+            </div>
+    }
+
+@{
+    var grid = new WebGrid(Model, defaultSort: "chineseName");
+    
+    }
+@grid.GetHtml(
+
+//tableStyle:"xx",
+//headerStyle:"xx",
+
+
+columns:grid.Columns(
+//grid.Column("chineseName",header:"中文名称",format:@<text>@Html.ActionLink((string)item.chineseName, "Edit", "Dashboard", new {id=item.brandsID },null)</text>),
+grid.Column("chineseName",header:"中文名称"),
+grid.Column("englishName",header:"英文名称"),
+grid.Column("logo",header:"Logo"),
+grid.Column(header:"编辑",format:@<text>@Html.ActionLink("编辑", "Edit", "Dashboard", new { id=item.brandsID},null)</text>),
+grid.Column(header:"删除",format:@<text>@Html.ActionLink("删除", "Delete", "Dashboard", new { id=item.brandsID},null)</text>)
+))
+@*@foreach (var item in Model)
+{
+    <div>@item.chineseName</div>
+}*@
+
