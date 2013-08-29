@@ -64,7 +64,7 @@ namespace Dengzher.Web.DAL.Services
                 {
                     brandsID = (int)row["b_brandsId"],
                     chineseName = (string)(row["b_chineseName"] == System.DBNull.Value ? string.Empty : row["b_chineseName"]),
-                    englishName = (string)(row["b_englisgName"] == System.DBNull.Value ? string.Empty : row["b_englisgName"]),
+                    englishName = (string)(row["b_englishName"] == System.DBNull.Value ? string.Empty : row["b_englishName"]),
                     logo = (string)row["b_logo"]
                 };
                 brands.Add(brand);
