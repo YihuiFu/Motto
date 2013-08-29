@@ -44,6 +44,10 @@
       <HintPath>..\Dengzher.Common\bin\Debug\Dengzher.Common.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -102,6 +106,7 @@
     <Compile Include="Areas\Api\ApiAreaRegistration.cs" />
     <Compile Include="Areas\Api\Controllers\AreaController.cs" />
     <Compile Include="Areas\Api\Controllers\BrandController.cs" />
+    <Compile Include="Areas\Api\Controllers\NetJsonResult.cs" />
     <Compile Include="Areas\Api\Controllers\StoreController.cs" />
     <Compile Include="Areas\Api\Controllers\UserController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -110,11 +115,13 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\Persistence\IActivityProvider.cs" />
     <Compile Include="DAL\Persistence\IAdminProvider.cs" />
+    <Compile Include="DAL\Persistence\IAreaProvider.cs" />
     <Compile Include="DAL\Persistence\IBrandProvider.cs" />
     <Compile Include="DAL\Persistence\IStoreProvider.cs" />
     <Compile Include="DAL\Persistence\IUserProvider.cs" />
     <Compile Include="DAL\Services\ActivityManager.cs" />
     <Compile Include="DAL\Services\AdminManager.cs" />
+    <Compile Include="DAL\Services\AreaManager.cs" />
     <Compile Include="DAL\Services\BrandManager.cs" />
     <Compile Include="DAL\Services\StoreManager.cs" />
     <Compile Include="DAL\Services\UserManager.cs" />
