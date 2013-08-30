@@ -7,6 +7,9 @@ using Dengzher.Web.Models;
 using Dengzher.Web.DAL.Persistence;
 using Dengzher.Web.DAL.Services;
 
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+
 namespace Dengzher.Web.Areas.Api.Controllers
 {
     public class UserController : Controller
@@ -40,6 +43,27 @@ namespace Dengzher.Web.Areas.Api.Controllers
         {
             _UserManager.UpdateByPhone(phone,newUser);
             return Json("success",JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult GetUsersNearby()
+        {
+            int tradeAreaId = 0;
+            if (string.IsNullOrEmpty(ControllerContext.HttpContext.Request.QueryString["TradeAreaId"]))
+                return null;
+            tradeAreaId = int.Parse(ControllerContext.HttpContext.Request.QueryString["TradeAreaId"]);
+            List<UserModels> users = _UserManager.GetUserNearby(tradeAreaId);
+            var jsonObject = new JArray();
+            var jsonEle = new JObject() as dynamic;
+            foreach(UserModels user in users)
+            {
+                jsonEle.mobilePhone = user.mobilePhone;
+                jsonEle.nickName = user.nickName;
+                jsonEle.avatar = user.avatar;
+                jsonEle.positionTime = user.positionTime;
+                jsonEle.floorNum = int.Parse(user.password);
+                jsonObject.Add(jsonEle);
+            }
+            return new NetJsonResult(jsonObject);
         }
 
         //------------------------------------------------------------------
