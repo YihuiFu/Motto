@@ -118,12 +118,14 @@
     <Compile Include="DAL\Persistence\IAreaProvider.cs" />
     <Compile Include="DAL\Persistence\IBrandProvider.cs" />
     <Compile Include="DAL\Persistence\IStoreProvider.cs" />
+    <Compile Include="DAL\Persistence\ITradeAreaProvider.cs" />
     <Compile Include="DAL\Persistence\IUserProvider.cs" />
     <Compile Include="DAL\Services\ActivityManager.cs" />
     <Compile Include="DAL\Services\AdminManager.cs" />
     <Compile Include="DAL\Services\AreaManager.cs" />
     <Compile Include="DAL\Services\BrandManager.cs" />
     <Compile Include="DAL\Services\StoreManager.cs" />
+    <Compile Include="DAL\Services\TradeAreaManager.cs" />
     <Compile Include="DAL\Services\UserManager.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

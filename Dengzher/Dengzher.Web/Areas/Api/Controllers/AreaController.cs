@@ -27,20 +27,7 @@ namespace Dengzher.Web.Areas.Api.Controllers
                 return null;
             if (!int.TryParse(ControllerContext.HttpContext.Request.QueryString["FloorNum"], out floorNum))
                 return null;
-            AreaModels areatmp = new AreaModels
-            {
-                AradID = 7,
-                TradeAreaFloor = 2,
-                TradeAreaID = 1,
-                Category = 7,
-                StartX = 23.4f,
-                StartY = 31.6f,
-                Height = 42,
-                Width = 65,
-                IsMark = true
-            };
-            AreaManager.Instance.Remove(10);
-            dynamic area = AreaManager.Instance.GetToilets(tradeAreaID, floorNum);
+            List<AreaModels> area = AreaManager.Instance.GetToilets(tradeAreaID, floorNum);
             return new NetJsonResult(area);
         }
 
