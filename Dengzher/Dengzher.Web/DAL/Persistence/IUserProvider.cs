@@ -15,5 +15,6 @@ namespace Dengzher.Web.DAL.Persistence
         void UpdateByPhone(string phone,UserModels newUser);
         void ChangePassword(string phone,string newPwd);
         bool UpdatePosition(string phone,int positionId);
+        List<UserModels> GetUserNearby(int tradeAreaId);
     }
 }

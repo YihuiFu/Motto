@@ -166,5 +166,26 @@ namespace Dengzher.Web.DAL.Services
 
         }
 
+        public virtual List<UserModels> GetUserNearby(int tradeAreaId)
+        {
+            List<dynamic> dym = new List<dynamic>();
+            string sqlString = "dbo.dz_User_GetUserNearby";
+            SqlParameter[] parm = { new SqlParameter("@TradeAreaId", tradeAreaId) };
+            List<UserModels> users = new List<UserModels>();
+            DataTable dtb = SqlSeverProvider.ExecuteQuery(sqlString, CommandType.StoredProcedure, parm);
+            if (dtb == null) return users;
+            foreach (DataRow row in dtb.Rows)
+            {
+                users.Add(new UserModels
+                {
+                    mobilePhone = (string)row["u_mobilePhone"],
+                    password = row["a_tradeAreaFloor"].ToString(),
+                    nickName = (string)row["u_nickName"],
+                    avatar = (string)(row["u_avatar"] == System.DBNull.Value ? string.Empty : row["u_avatar"]),
+                    positionTime = (DateTime)(row["u_positionTime"] == System.DBNull.Value ? "2013-08-12" : row["u_positionTime"])
+                });
+            }
+            return users;
+        }
     }
 }
