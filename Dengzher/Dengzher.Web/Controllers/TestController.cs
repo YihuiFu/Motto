@@ -19,6 +19,8 @@ namespace Dengzher.Web.Controllers
 
         public ActionResult test()
         {
+            var second = "这是第二次修改的";
+            var result = second;
             return View();
         }
 
