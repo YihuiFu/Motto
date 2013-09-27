@@ -35,9 +35,16 @@ namespace Dengzher.Web.Controllers
 
         public ActionResult About()
         {
+            string hello = "hello ,i am just test git";
             return View();
         }
 
+
+        public ActionResult test()
+        {
+            var num = 6788;
+            return Json(num,JsonRequestBehavior.AllowGet);
+        }
 
       
     }

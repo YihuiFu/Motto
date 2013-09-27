@@ -31,6 +31,8 @@ namespace Dengzher.Web.Models
         public DateTime positionTime { get; set; }
 
         public DateTime registerTime { get; set; }
+
+        public int hello { get; set; }
     }
     
 }
