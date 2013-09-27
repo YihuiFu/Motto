@@ -113,6 +113,7 @@
     <Compile Include="Controllers\ApiController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="DAL\Persistence\IActivityProvider.cs" />
     <Compile Include="DAL\Persistence\IAdminProvider.cs" />
     <Compile Include="DAL\Persistence\IAreaProvider.cs" />
