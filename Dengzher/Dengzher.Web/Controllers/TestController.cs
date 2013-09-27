@@ -16,7 +16,8 @@ namespace Dengzher.Web.Controllers
             return View();
         }
 
-        public ActionResult test1()
+
+        public ActionResult test()
         {
             return View();
         }

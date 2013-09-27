@@ -32,7 +32,9 @@ namespace Dengzher.Web.Models
 
         public DateTime registerTime { get; set; }
 
-        public int hello { get; set; }
+        public int testh { get; set; }
+
+        public string hello { get; set; }
     }
     
 }
